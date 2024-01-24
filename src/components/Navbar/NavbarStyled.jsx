@@ -36,7 +36,6 @@ export const Nav = styled.nav`
 
     &:hover {
       background-color: #b1b1b1bf;
-      color: #ffff;
       scale: calc(0.97);
     }
 
