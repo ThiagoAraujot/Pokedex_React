@@ -16,12 +16,12 @@ export default function List50Pokemons() {
         .then((data) => setPokemon(data))
         .catch((error) => console.error("Error fetching data: ", error));
       setRemoveLoading(true);
-    }, 5000);
+    }, 3000);
   }, []);
 
   return (
     <PokedexContainer>
-      <Navbar />
+      <Navbar text="First 50 Pokémons" />
       <Pokedex>
         {pokemon.map((pokemon) => (
           <Card
@@ -29,7 +29,7 @@ export default function List50Pokemons() {
             name={pokemon.name}
             type={pokemon.types.join(" ")}
             image={pokemon.image}
-            heigth={pokemon.heigth}
+            height={pokemon.height}
             weight={pokemon.weight}
           />
         ))}

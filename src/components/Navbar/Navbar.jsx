@@ -6,10 +6,11 @@ export function Navbar() {
   return (
     <Nav>
       <img src={logo} alt="" />
+
       <Link to="/">
         <button>
           Back to Home
-          <i class="bi bi-box-arrow-right"></i>
+          <i className="bi bi-box-arrow-right"></i>
         </button>
       </Link>
     </Nav>

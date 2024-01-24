@@ -5,11 +5,16 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.5rem;
+  padding: 1.5rem 0;
   gap: 1rem;
+  text-align: center;
 
   img {
     width: 15%;
+
+    @media screen and (max-width: 940px) {
+      width: 40%;
+    }
   }
 
   button {
@@ -23,14 +28,15 @@ export const Nav = styled.nav`
     letter-spacing: 0.05rem;
     border: none;
     border-radius: 7px;
-    background-color: #000;
-    color: #fff;
+    backdrop-filter: blur(10px);
+    color: #000;
     cursor: pointer;
     transition: all 0.3s;
     box-shadow: rgba(0, 0, 0, 0.201) 0px 5px 15px;
 
     &:hover {
-      background-color: #252525;
+      background-color: #b1b1b1bf;
+      color: #ffff;
       scale: calc(0.97);
     }
 
@@ -39,3 +45,4 @@ export const Nav = styled.nav`
     }
   }
 `;
+

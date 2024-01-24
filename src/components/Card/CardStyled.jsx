@@ -11,15 +11,23 @@ export const CardContainer = styled.div`
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-bottom: 2px solid white;
   color: #ffffff;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
 
   h1 {
     color: #ffffff7e;
+    font-size: 2.3rem;
   }
 
   h2 {
     font-family: "Poppins", sans-serif;
     text-transform: capitalize;
     font-size: 1.6rem;
+    padding: 0.5em 0;
   }
 
   h3 {
@@ -104,5 +112,6 @@ export const ImgContainer = styled.div`
     width: 80%;
     /*height: 100%;*/
     filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
+    filter: brightness(1.2);
   }
 `;

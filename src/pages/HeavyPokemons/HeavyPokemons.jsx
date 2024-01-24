@@ -28,7 +28,7 @@ export function HeavyPokemons() {
             name={pokemon.name}
             type={pokemon.types.join(" ")}
             image={pokemon.image}
-            heigth={pokemon.heigth}
+            height={pokemon.height}
             weight={pokemon.weight}
           />
         ))}
