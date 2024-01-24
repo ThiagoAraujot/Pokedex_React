@@ -15,7 +15,6 @@ export default function List50Pokemons() {
         .then((response) => response.json())
         .then((data) => setPokemon(data))
         .catch((error) => console.error("Error fetching data: ", error));
-      setRemoveLoading(true);
     }, 3000);
   }, []);
 
