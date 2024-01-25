@@ -4,11 +4,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./pages/Home/Home.jsx";
 import { GlobalStyled } from "./GlobalStyled.jsx";
 import ErrorPage from "./pages/Error/ErrorPage.jsx";
-import List50Pokemons from "./pages/List50Pokemons/list50Pokemons.jsx";
-import { HeavyPokemons } from "./pages/HeavyPokemons/HeavyPokemons.jsx";
-import { GrassPokemon } from "./pages/GrassPokemon/GrassPokemon.jsx";
-import FlyPokemons from "./pages/FlyPokemons/FlyPokemons.jsx";
-import InvertedNames from "./pages/InvertedNames/InvertedNames.jsx";
+import PokemonsPage from "./components/PokemonsPage/PokemonsPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -18,27 +14,27 @@ const router = createBrowserRouter([
   },
   {
     path: "/list50pokemons",
-    element: <List50Pokemons />,
+    element: <PokemonsPage endpoint="list_pokemon" />,
     errorElement: <ErrorPage />,
   },
   {
     path: "/heavy_pokemon",
-    element: <HeavyPokemons />,
+    element: <PokemonsPage endpoint="heavy_pokemon" />,
     errorElement: <ErrorPage />,
   },
   {
     path: "/grass_pokemon",
-    element: <GrassPokemon />,
+    element: <PokemonsPage endpoint="grass_pokemon" />,
     errorElement: <ErrorPage />,
   },
   {
     path: "/flying_high_pokemon",
-    element: <FlyPokemons />,
+    element: <PokemonsPage endpoint="flying_high_pokemon" />,
     errorElement: <ErrorPage />,
   },
   {
     path: "/inverted_names",
-    element: <InvertedNames />,
+    element: <PokemonsPage endpoint="inverted_names" />,
     errorElement: <ErrorPage />,
   },
 ]);
