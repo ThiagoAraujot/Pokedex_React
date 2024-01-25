@@ -13,7 +13,7 @@ Before you begin, ensure you meet the following requirements:
 To install the project, follow these steps:
 
 1. Clone the repository:
-- git clone https://github.com/thiagoAraujot/Pokedex_React.git
+- *git clone https://github.com/thiagoAraujot/Pokedex_React.git*
 
 2. Navigate to the project directory:
 - *cd Pokedex_React*
