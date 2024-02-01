@@ -1,4 +1,4 @@
-# Pokedex Technical Test HP Internship 2024
+# Pokedex Technical Test HP Internship 
 
 A Pokedex application created with Vite+React for the frontend. This application retrieves data from an API called PokeAPI, which returns the first 50 Pokémon from this API. Additional filters were also implemented, such as Pokémon weighing between 30 and 80, flying Pokémon with a height greater than 10, among others. Some packages like styled-components were used for styling, and react-router-dom was employed to facilitate route switching within the application.
 
